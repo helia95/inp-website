@@ -24,13 +24,14 @@
     <script src="./static/js/bulma-carousel.min.js"></script>
     <script src="./static/js/bulma-slider.min.js"></script>
     <script src="./static/js/index.js"></script>
-    <title>Interactive Neural Paint</title>
+    <title>Interactive Neural Painting</title>
 </head>
 <body>
 
 <section class="hero">
     <div class="hero-body">
         <div class="container is-max-desktop align-content-between">
+            <div class="columns is-centered">
             <div class="columns is-centered">
                 <div class="column has-text-centered">
                     <h1 class="title is-1 publication-title">Interactive Neural Painting</h1>
@@ -63,7 +64,7 @@
                 interpolate between them. The strokes smoothly transition from the start to the end point, focusing on
                 the same object.</p>
 
-            <div class="carousel results-carousel" id="interpolations">
+            <div class="carousel is-5 results-carousel" id="slider" data-autoplay="true">
                 <div class="item">
                     <video autoplay class="video-fluid w-100 flex" controls loop muted>
                         <source src="videos/interpolate/Maine_Coon_264_n_03_s_animated.mp4" type="video/mp4"/>
@@ -340,7 +341,5 @@
         </div>
     </div>
 </section>
-
-
 </body>
 </html>
